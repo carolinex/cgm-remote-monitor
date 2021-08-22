@@ -107,6 +107,20 @@ body {
   top: 45px;
   z-index: 2;
 }
+.container.urgent {
+  color: #fff;
+  background-color: #E04445;
+}
+
+.container.warning {
+  color: #333;
+  background-color: #F9C307;
+}
+
+.container.inrange {
+  color: #fff;
+  background-color: #2FB3BE;
+}
 
 button {
   -webkit-appearance: none;
@@ -126,15 +140,15 @@ a, a:visited, a:link {
 }
 
 #container.announcing .customTitle {
-  color: orange;
+  /*color: orange;*/
 }
 
 #container.alarming.urgent .customTitle {
-  color: red;
+  /*color: red;*/
 }
 
 #container.alarming.warning .customTitle {
-  color: yellow;
+  /*color: yellow;*/
 }
 
 .primary {
@@ -214,11 +228,11 @@ a, a:visited, a:link {
 .pill {
   white-space: nowrap;
   border-radius: 5px;
-  border: 2px solid #808080;
-  background: #808080;
+  background: #E3E2D6;
   display: inline-block;
   margin-bottom: 4px;
   padding: 2px 0;
+  color: #333;
 }
 
 .pill em, .pill label {
@@ -229,34 +243,34 @@ a, a:visited, a:link {
 .pill em {
   font-style: normal;
   font-weight: bold;
-  background: #E3E2D6;
+  background: #BABBA7;
   border-radius: 3px;
 }
 
 .pill label {
-  color: #E3E2D6;
+  color: #444;
 }
 
 .container .pill.warn em {
-  color: yellow;
+  /*color: yellow;*/
 }
 
 .container .pill.urgent em {
-  color: red;
+  /*color: red;*/
 }
 
 .alarming-timeago .timeago.pill.warn {
-  border-color: yellow;
+  /*border-color: yellow;*/
 }
 .alarming-timeago .timeago.pill.warn label {
-  background: yellow;
+  /*background: yellow;*/
 }
 
 .alarming-timeago .timeago.pill.urgent {
-  border-color: red;
+  /*border-color: red;*/
 }
 .alarming-timeago .timeago.pill.urgent label {
-  background: red;
+  /*background: red;*/
 }
 
 .bgStatus.current .currentBG {
@@ -302,7 +316,7 @@ a, a:visited, a:link {
   bottom: 0;
   height: auto;
   font-size: 20px;
-  background: '#E3E2D6';
+  background: #E3E2D6;
   display: block;
   position: absolute;
   margin: 2px;
@@ -658,8 +672,7 @@ a, a:visited, a:link {
   }
 
   #currentTime {
-    display: inline;
-    vertical-align: middle;
+    display: block;
   }
 
   .statusPills {
@@ -751,6 +764,7 @@ a, a:visited, a:link {
   }
 
   .bgStatus .majorPills {
+    display: none!important;
     font-size: 15px;
     line-height: 17px;
   }
