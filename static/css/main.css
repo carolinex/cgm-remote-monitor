@@ -886,8 +886,7 @@ a, a:visited, a:link {
 }
 
 .chart-context{
-  /*display: none!important;*/
-  z-index: -1
+  display: none!important;
 }
 
 .currentTime{
