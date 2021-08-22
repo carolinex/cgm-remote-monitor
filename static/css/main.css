@@ -229,7 +229,7 @@ a, a:visited, a:link {
 .pill {
   white-space: nowrap;
   border-radius: 5px;
-  background: #E3E2D6;
+  background: #fff;
   display: inline-block;
   margin-bottom: 4px;
   padding: 2px 0;
@@ -302,24 +302,25 @@ a, a:visited, a:link {
 }
 
 .statusPills .pill {
-  background: #808080;
-  border-color: #808080;
+  background: #fff;
+  border-color: #fff;
   margin-right: 5px;
 }
 
 .statusPills .pill em {
-  color: #bdbdbd;
+  color: #fff;
+  background: #555;
 }
 
 #chartContainer {
   left: 0;
   right: 0;
   bottom: 0;
-  height: auto;
+  height: 46%;
   font-size: 20px;
   background: #E3E2D6;
   display: block;
-  position: absolute;
+  position: relative;
   margin: 2px;
   overflow: hidden;
 }
@@ -654,7 +655,7 @@ a, a:visited, a:link {
   .bgStatus .pill.direction {
     font-size: 60px;
     line-height: 60px;
-    margin-right: -100%;
+    margin-right: -30%;
   }
 
   .bgStatus .majorPills {
@@ -874,4 +875,12 @@ a, a:visited, a:link {
 
 .forecast-dot{
   display: none;
+}
+
+.chart-context{
+  display: none!important;
+}
+
+.currentTime{
+  color: #fff!important;
 }
