@@ -203,6 +203,7 @@ a, a:visited, a:link {
   vertical-align: middle;
   border: none;
   background: none;
+  color: #fff;
 }
 
 .bgStatus .majorPills {
@@ -443,7 +444,7 @@ a, a:visited, a:link {
   margin: 4px;
   padding: 0;
   color: #808080;
-  width: 40%;
+  width: 35%;
   text-align: center;
 }
 
@@ -619,7 +620,7 @@ a, a:visited, a:link {
   }
 
   .currentTime{
-    color: #fff;
+    color: #fff!important;
   }
 
   .pill.delta{
@@ -868,4 +869,8 @@ a, a:visited, a:link {
 }
 .axis .tick line, .axis .domain{
   stroke: #9A9B8C;
+}
+
+.forecast-dot{
+  display: none;
 }
