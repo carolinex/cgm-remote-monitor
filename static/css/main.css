@@ -107,6 +107,7 @@ body {
   padding: 0 0 10% 0;
   top: 45px;
   z-index: 2;
+  background-color: #ccc;
 }
 .container.urgent {
   color: #fff;
@@ -168,17 +169,17 @@ a, a:visited, a:link {
 
 .urgent .bgButton {
   color: #fff;
-  background-color: #E04445;
+  /*background-color: #E04445;*/
 }
 
 .warning .bgButton {
   color: #333;
-  background-color: #F9C307;
+  /*background-color: #F9C307;*/
 }
 
 .inrange .bgButton {
   color: #fff;
-  background-color: #2FB3BE;
+  /*background-color: #2FB3BE;*/
 }
 
 .bgStatus .bgSpan {
@@ -923,9 +924,15 @@ a, a:visited, a:link {
 }
 #readings-list li .bg-time{
   width: 50%;
+  font-size: 14px;
   text-align: right;
 }
 
 .y.axis .domain{
   display: none;
+}
+
+.tooltip span{
+  display: block;
+  padding: 8px;
 }
