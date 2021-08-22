@@ -90,7 +90,7 @@
 html, body {
   margin: 0;
   padding: 0;
-  min-height: 900px;
+  min-height: 600px;
 }
 
 body {
@@ -104,7 +104,7 @@ body {
   display: block;
   left: 0;
   margin: 0;
-  padding: 10% 0;
+  padding: 0 0 10% 0;
   top: 45px;
   z-index: 2;
 }
@@ -626,6 +626,7 @@ a, a:visited, a:link {
 
   .currentTime{
     color: #fff!important;
+    margin: 15px 0;
   }
 
   .pill.delta{
@@ -891,7 +892,7 @@ a, a:visited, a:link {
 
 #readings{
   background: #f5f6f1;
-  margin-top: -18%;
+  margin-top: 10px;
   z-index:1000;
   width: 100%;
   padding: 0;
@@ -922,4 +923,8 @@ a, a:visited, a:link {
 #readings-list li .bg-time{
   width: 50%;
   text-align: right;
+}
+
+.y.axis .domain{
+  display: none;
 }
