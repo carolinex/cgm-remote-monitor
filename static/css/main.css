@@ -631,8 +631,8 @@ a, a:visited, a:link {
     float: none;
     padding: 0;
     text-align: center;
-    width: 86%;
-    margin-left: 14%;
+    width: 100%;
+    margin-left: 0%;
   }
 
 
@@ -654,6 +654,7 @@ a, a:visited, a:link {
   .bgStatus .pill.direction {
     font-size: 60px;
     line-height: 60px;
+    margin-right: -100%;
   }
 
   .bgStatus .majorPills {
