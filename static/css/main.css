@@ -306,6 +306,7 @@ a, a:visited, a:link {
   background: #fff;
   border-color: #fff;
   margin-right: 5px;
+  padding: 6px 10px;
 }
 
 .statusPills .pill em {
@@ -317,13 +318,14 @@ a, a:visited, a:link {
   left: 0;
   right: 0;
   bottom: 0;
-  height: 46%;
+  height: 65%;
   font-size: 20px;
   background: #f5f6f1;
   display: block;
   position: relative;
   margin: 2px;
   overflow: hidden;
+  z-index:0;
 }
 
 #chartContainer svg {
