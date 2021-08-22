@@ -152,15 +152,18 @@ a, a:visited, a:link {
 }
 
 .urgent .bgButton {
-  color: #E04445;
+  color: #fff;
+  background-color: #E04445;
 }
 
 .warning .bgButton {
-  color: #F9C307;
+  color: #333;
+  background-color: #F9C307;
 }
 
 .inrange .bgButton {
-  color: #2FB3BE;
+  color: #fff;
+  background-color: #2FB3BE;
 }
 
 .bgStatus .bgSpan {
@@ -336,7 +339,7 @@ a, a:visited, a:link {
 
 .bgButton {
   margin: 10px;
-  border: 2px solid #E3E2D6;
+  border: none;
   border-radius: 5px;
   display: inline-block;
   width: 360px;
@@ -824,4 +827,11 @@ a, a:visited, a:link {
     font-size: 12px;
     line-height: 13px;
   }
+}
+
+
+/******
+// Inclusões - Carol X */
+.dbsize, .focus-range{
+  display: none!important;
 }
