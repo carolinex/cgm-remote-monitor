@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css?family=Ubuntu:400,700');
+@import url('https://fonts.googleapis.com/css?family=Quattrocento+Sans:200,400');
 
 @font-face {
   font-family: 'nsicons';
@@ -94,8 +94,8 @@ html, body {
 
 body {
   font-family: 'Ubuntu', sans-serif;
-  background: #000;
-  color: #bdbdbd;
+  background: #f5f6f1;
+  color: #333;
 }
 
 .container {
