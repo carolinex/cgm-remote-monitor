@@ -698,7 +698,8 @@ a, a:visited, a:link {
   }
 
   .statusPills {
-    display: inline;
+    display: block;
+    margin-top: 10px;
     margin-left: auto;
     font-size: 12px;
     line-height: 13px;
