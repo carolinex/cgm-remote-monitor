@@ -107,7 +107,7 @@ body {
   padding: 0 0 10% 0;
   top: 45px;
   z-index: 2;
-  background-color: #BABBA7;
+  background-color: #333;
 }
 .container.urgent {
   color: #fff;
@@ -512,6 +512,7 @@ a, a:visited, a:link {
   .bgStatus .currentBG {
     font-size: 80px;
     line-height: 80px;
+    color: #fff!important;
   }
 
   .bgStatus .currentBG.bg-limit, .bgStatus .currentBG.icon-hourglass {
