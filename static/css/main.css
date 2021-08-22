@@ -152,15 +152,15 @@ a, a:visited, a:link {
 }
 
 .urgent .bgButton {
-  color: red;
+  color: #E04445;
 }
 
 .warning .bgButton {
-  color: yellow;
+  color: #F9C307;
 }
 
 .inrange .bgButton {
-  color: #4cff00;
+  color: #2FB3BE;
 }
 
 .bgStatus .bgSpan {
@@ -226,12 +226,12 @@ a, a:visited, a:link {
 .pill em {
   font-style: normal;
   font-weight: bold;
-  background: #000;
+  background: #E3E2D6;
   border-radius: 3px;
 }
 
 .pill label {
-  color: #000;
+  color: #E3E2D6;
 }
 
 .container .pill.warn em {
@@ -299,7 +299,7 @@ a, a:visited, a:link {
   bottom: 0;
   height: auto;
   font-size: 20px;
-  background: #111;
+  background: '#E3E2D6';
   display: block;
   position: absolute;
   margin: 2px;
@@ -336,7 +336,7 @@ a, a:visited, a:link {
 
 .bgButton {
   margin: 10px;
-  border: 2px solid #000;
+  border: 2px solid #E3E2D6;
   border-radius: 5px;
   display: inline-block;
   width: 360px;
@@ -370,7 +370,7 @@ a, a:visited, a:link {
 
 .alarming .bgButton {
   border-color: #bdbdbd;
-  color: #000;
+  color: #E3E2D6;
   box-shadow: 2px 2px 0 #ddd;
 }
 
@@ -435,13 +435,13 @@ a, a:visited, a:link {
   font-size: 18px;
   white-space: nowrap;
   border-radius: 5px;
-  border: 2px solid #000;
+  border: 2px solid #E3E2D6;
   cursor: pointer;
 }
 
 .focus-range .selected {
   border-color: #808080;
-  color: #000;
+  color: #E3E2D6;
   background: #808080;
 }
 
