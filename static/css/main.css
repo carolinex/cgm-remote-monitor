@@ -399,11 +399,11 @@ a, a:visited, a:link {
 }
 
 .alarming.urgent .bgButton {
-  background-color: red;
+  /*background-color: red;*/
 }
 
 .alarming.warning .bgButton {
-  background-color: yellow;
+  /*background-color: yellow;*/
 }
 
 .alarming .bgButton:active {
