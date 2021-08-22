@@ -238,7 +238,7 @@ a, a:visited, a:link {
 }
 
 .pill em, .pill label {
-  padding: 6px 10px;
+  padding: 6px;
   white-space: nowrap;
 }
 
@@ -306,12 +306,13 @@ a, a:visited, a:link {
   background: #fff;
   border-color: #fff;
   margin-right: 5px;
-  padding: 6px 10px;
+  padding: 6px 0px;
 }
 
 .statusPills .pill em {
   color: #fff;
   background: #555;
+  padding: 6px;
 }
 
 #chartContainer {
