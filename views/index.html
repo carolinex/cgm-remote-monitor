@@ -118,7 +118,7 @@
     </div>
   </div>
   <div class="container loading" id="container">
-    <!-- <%- include('partials/toolbar') %> -->
+    <%- include('partials/toolbar') %>
 
     <div id="notification" role="region" aria-label="Notification">
       <a href="#" aria-label="cancel"><span></span><i class="icon-cancel-circled"></i></a>
@@ -161,6 +161,16 @@
   </div>
   <div class="row-fluid section1">
     <div id="chartContainer" role="region" aria-label="Chart"></div>
+  </div>
+
+  <div id="readings">
+    <ul id="readings-list">
+      <li><div class="bg-value">112</div><div class="bg-time">20:45</div></li>
+      <li><div class="bg-value">110</div><div class="bg-time">20:49</div></li>
+      <li><div class="bg-value">105</div><div class="bg-time">20:44</div></li>
+      <li><div class="bg-value">105</div><div class="bg-time">20:39</div></li>
+      <li><div class="bg-value">98</div><div class="bg-time">20:34</div></li>
+    </ul>
   </div>
   </div>
 

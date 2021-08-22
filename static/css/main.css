@@ -237,7 +237,7 @@ a, a:visited, a:link {
 }
 
 .pill em, .pill label {
-  padding: 2px 3px;
+  padding: 6px 10px;
   white-space: nowrap;
 }
 
@@ -283,7 +283,7 @@ a, a:visited, a:link {
 }
 
 .status {
-  color: #808080;
+  color: #fff;
   font-size: 100px;
   white-space: normal;
 }
@@ -318,7 +318,7 @@ a, a:visited, a:link {
   bottom: 0;
   height: 46%;
   font-size: 20px;
-  background: #E3E2D6;
+  background: #f5f6f1;
   display: block;
   position: relative;
   margin: 2px;
@@ -883,4 +883,36 @@ a, a:visited, a:link {
 
 .currentTime{
   color: #fff!important;
+}
+
+#readings{
+  background: #f5f6f1;
+  margin-top: -18%;
+  z-index:1000;
+  width: 100%;
+  padding: 20px;
+}
+
+#readings-list{
+  list-style-type: none;
+  margin: 20px 0 0 0;
+  padding: 0;
+  background: #f5f6f1;
+  min-height: 200px;
+}
+
+#readings-list li{
+  padding: 10px 20px;
+  font-size: 21px;
+  background: #88CBD4;
+  color: #fff;
+}
+
+#readings-list li .bg-value{
+  width: 50%;
+  text-align: left;
+}
+#readings-list li .bg-time{
+  width: 50%;
+  text-align: right;
 }
