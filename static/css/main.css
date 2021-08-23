@@ -150,9 +150,10 @@ a, a:visited, a:link {
   text-decoration: none;
 }
 #toolbar {
-  opacity: 0.2;
+  opacity: 0;
   position: absolute;
   bottom: 0;
+  display:none;
 }
 
 #container.announcing .customTitle {
