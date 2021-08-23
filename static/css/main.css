@@ -101,10 +101,13 @@ body {
 
 .container {
   bottom: 0;
-  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   left: 0;
   margin: 0;
-  padding: 0 0 10% 0;
+  padding: 14% 0 14% 0;
   top: 45px;
   z-index: 2;
   background-color: #333;
