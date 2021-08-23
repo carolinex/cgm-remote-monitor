@@ -109,14 +109,23 @@ body {
   z-index: 2;
   background-color: #333;
 }
-.container.urgent {
+.container.high2{
   color: #fff;
   background-color: #E04445;
 }
+.container.high1{
+  color: #fff;
+  background-color: #EE9899;
+}
 
-.container.warning {
+.container.low1 {
   color: #333;
   background-color: #F9C307;
+}
+
+.container.low2 {
+  color: #333;
+  background-color: #D6A808;
 }
 
 .container.inrange {
