@@ -26,7 +26,7 @@ describe('boluswizardpreview', function ( ) {
     iob.setProperties(sbx);
     boluswizardpreview.setProperties(sbx);
     sbx.offerProperty('direction', function setFakeDirection() {
-      return {value: 'FortyFiveUp', label: '↗', entity: '&#8599;'};
+      return {value: 'FortyFiveUp', label: '&nearrow;', entity: '&#8599;'};
     });
 
     return sbx;

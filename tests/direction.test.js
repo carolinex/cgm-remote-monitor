@@ -78,13 +78,13 @@ describe('BG direction', function ( ) {
     direction.info({mills: now, direction: 'SingleUp'}).label.should.equal('&#uarr;');
     direction.info({mills: now, direction: 'SingleUp'}).entity.should.equal('&#8593;');
 
-    direction.info({mills: now, direction: 'FortyFiveUp'}).label.should.equal('&#nearr;');//'↗'
+    direction.info({mills: now, direction: 'FortyFiveUp'}).label.should.equal('&#nearr;');//'&nearrow;'
     direction.info({mills: now, direction: 'FortyFiveUp'}).entity.should.equal('&#8599;');
 
     direction.info({mills: now, direction: 'Flat'}).label.should.equal('&#rarr;');//'→'
     direction.info({mills: now, direction: 'Flat'}).entity.should.equal('&#8594;');
 
-    direction.info({mills: now, direction: 'FortyFiveDown'}).label.should.equal('&#searr;');//'↘'
+    direction.info({mills: now, direction: 'FortyFiveDown'}).label.should.equal('&#searr;');//'&searrow;'
     direction.info({mills: now, direction: 'FortyFiveDown'}).entity.should.equal('&#8600;');
 
     direction.info({mills: now, direction: 'SingleDown'}).label.should.equal('&#darr;');//'↓'
