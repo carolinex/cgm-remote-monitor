@@ -955,7 +955,7 @@ a, a:visited, a:link {
 }
 
 .y.axis .domain{
-  display: none;
+  fill: #f5f6f1;
 }
 
 .tooltip span{
