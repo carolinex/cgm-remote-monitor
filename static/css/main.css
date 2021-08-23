@@ -149,6 +149,11 @@ a, a:visited, a:link {
   color: #2196f3;
   text-decoration: none;
 }
+#container #toolbar {
+  opacity: 0.2;
+  position: absolute;
+  bottom: 0;
+}
 
 #container.announcing .customTitle {
   /*color: orange;*/
