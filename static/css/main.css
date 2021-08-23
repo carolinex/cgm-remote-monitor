@@ -214,6 +214,7 @@ a, a:visited, a:link {
 .bgStatus .majorPills {
   font-size: 30px;
   line-height: 34px;
+  display: none!important;
 }
 
 .minorPills {
@@ -530,6 +531,7 @@ a, a:visited, a:link {
   .bgStatus .majorPills {
     font-size: 20px;
     line-height: 24px;
+    display: none!important;
   }
 
   .bgStatus .minorPills {
@@ -565,7 +567,7 @@ a, a:visited, a:link {
   }
 }
 
-@media (max-width: 750px) {
+@media (max-width: 768px) {
   .x.axis {
     font-size: 2.5vmin !important;
   }
@@ -605,6 +607,7 @@ a, a:visited, a:link {
   .bgStatus .majorPills {
     font-size: 15px;
     line-height: 17px;
+    display: none!important;
   }
 
   .bgStatus .minorPills {
@@ -618,7 +621,7 @@ a, a:visited, a:link {
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 768px) {
   .primary {
     text-align: center;
     flex-direction: column;
@@ -671,6 +674,7 @@ a, a:visited, a:link {
   .bgStatus .majorPills {
     font-size: 15px;
     line-height: 17px;
+    display: none!important;
   }
 
   .bgStatus .minorPills {
@@ -839,6 +843,7 @@ a, a:visited, a:link {
   .bgStatus .majorPills {
     font-size: 15px;
     line-height: 17px;
+    display: none!important;
   }
 
   .bgStatus .minorPills {
