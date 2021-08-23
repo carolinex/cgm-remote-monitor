@@ -941,7 +941,7 @@ a, a:visited, a:link {
 #readings-list li .bg-value{
   width: 20%;
   height: 100%;
-  max-width: 80px;
+  max-width: 60px;
   min-width: 50px;
   text-align: left;
   text-align: right;
