@@ -71,7 +71,7 @@ describe('ar2', function ( ) {
       return {displayLine: 'IOB: 1.25U'};
     });
     sbx.offerProperty('direction', function setFakeDirection() {
-      return {value: 'FortyFiveUp', label: '↗', entity: '&#8599;'};
+      return {value: 'FortyFiveUp', label: '&#8663;', entity: '&#8663;'};
     });
     ar2.checkNotifications(sbx);
     var highest = ctx.notifications.findHighestAlarm();

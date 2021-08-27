@@ -10,8 +10,8 @@
   word-wrap: break-word;
 }
 .tooltip .tooltip-inner {
-  background-color: #000;
-  color: #fff;
+  background-color: #E3E2D6;
+  color: #333;
   max-width: 200px;
   padding: 3px 8px;
   text-align: center;
@@ -25,19 +25,19 @@
   width: 0;
   height: 0;
   line-height: 0;
-  border: 5px dashed #000;
+  border: 5px dashed #E3E2D6;
 }
 .tooltip .tooltip-arrow-n {
-  border-bottom-color: #000;
+  border-bottom-color: #E3E2D6;
 }
 .tooltip .tooltip-arrow-s {
-  border-top-color: #000;
+  border-top-color: #E3E2D6;
 }
 .tooltip .tooltip-arrow-e {
-  border-left-color: #000;
+  border-left-color: #E3E2D6;
 }
 .tooltip .tooltip-arrow-w {
-  border-right-color: #000;
+  border-right-color: #E3E2D6;
 }
 .tooltip.tooltip-n .tooltip-arrow {
   top: 0px;

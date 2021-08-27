@@ -60,7 +60,7 @@
 .axis path,
 .axis line {
   fill: none;
-  stroke: #000;
+  stroke: #E3E2D6;
   shape-rendering: crispEdges;
 }
 

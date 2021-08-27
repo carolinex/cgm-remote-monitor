@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css?family=Ubuntu:400,700');
+@import url('https://fonts.googleapis.com/css?family=Quattrocento+Sans:200,400');
 
 @font-face {
   font-family: 'nsicons';
@@ -90,12 +90,14 @@
 html, body {
   margin: 0;
   padding: 0;
+  min-height: 600px;
+  height: 100%;
 }
 
 body {
   font-family: 'Ubuntu', sans-serif;
-  background: #000;
-  color: #bdbdbd;
+  background: #f5f6f1;
+  color: #333;
 }
 
 .container {
@@ -103,9 +105,33 @@ body {
   display: block;
   left: 0;
   margin: 0;
-  padding: 0;
+  padding: 90px 0;
   top: 45px;
   z-index: 2;
+  background-color: #333;
+}
+.container.high2{
+  color: #fff;
+  background-color: #E04445;
+}
+.container.high1{
+  color: #fff;
+  background-color: #EE9899;
+}
+
+.container.low1 {
+  color: #333;
+  background-color: #F9C307;
+}
+
+.container.low2 {
+  color: #333;
+  background-color: #D6A808;
+}
+
+.container.inrange {
+  color: #fff;
+  background-color: #2FB3BE;
 }
 
 button {
@@ -124,17 +150,23 @@ a, a:visited, a:link {
   color: #2196f3;
   text-decoration: none;
 }
+#toolbar {
+  opacity: 0;
+  position: absolute;
+  bottom: 0;
+  display:none;
+}
 
 #container.announcing .customTitle {
-  color: orange;
+  /*color: orange;*/
 }
 
 #container.alarming.urgent .customTitle {
-  color: red;
+  /*color: red;*/
 }
 
 #container.alarming.warning .customTitle {
-  color: yellow;
+  /*color: yellow;*/
 }
 
 .primary {
@@ -152,15 +184,18 @@ a, a:visited, a:link {
 }
 
 .urgent .bgButton {
-  color: red;
+  color: #fff;
+  /*background-color: #E04445;*/
 }
 
 .warning .bgButton {
-  color: yellow;
+  color: #333;
+  /*background-color: #F9C307;*/
 }
 
 .inrange .bgButton {
-  color: #4cff00;
+  color: #fff;
+  /*background-color: #2FB3BE;*/
 }
 
 .bgStatus .bgSpan {
@@ -186,11 +221,13 @@ a, a:visited, a:link {
   vertical-align: middle;
   border: none;
   background: none;
+  color: #fff;
 }
 
 .bgStatus .majorPills {
   font-size: 30px;
   line-height: 34px;
+  display: none!important;
 }
 
 .minorPills {
@@ -211,49 +248,49 @@ a, a:visited, a:link {
 .pill {
   white-space: nowrap;
   border-radius: 5px;
-  border: 2px solid #808080;
-  background: #808080;
+  background: #fff;
   display: inline-block;
   margin-bottom: 4px;
   padding: 2px 0;
+  color: #333;
 }
 
 .pill em, .pill label {
-  padding: 2px 3px;
+  padding: 6px 10px;
   white-space: nowrap;
 }
 
 .pill em {
   font-style: normal;
   font-weight: bold;
-  background: #000;
+  background: #BABBA7;
   border-radius: 3px;
 }
 
 .pill label {
-  color: #000;
+  color: #444;
 }
 
 .container .pill.warn em {
-  color: yellow;
+  /*color: yellow;*/
 }
 
 .container .pill.urgent em {
-  color: red;
+  /*color: red;*/
 }
 
 .alarming-timeago .timeago.pill.warn {
-  border-color: yellow;
+  /*border-color: yellow;*/
 }
 .alarming-timeago .timeago.pill.warn label {
-  background: yellow;
+  /*background: yellow;*/
 }
 
 .alarming-timeago .timeago.pill.urgent {
-  border-color: red;
+  /*border-color: red;*/
 }
 .alarming-timeago .timeago.pill.urgent label {
-  background: red;
+  /*background: red;*/
 }
 
 .bgStatus.current .currentBG {
@@ -265,7 +302,7 @@ a, a:visited, a:link {
 }
 
 .status {
-  color: #808080;
+  color: #fff;
   font-size: 100px;
   white-space: normal;
 }
@@ -284,26 +321,30 @@ a, a:visited, a:link {
 }
 
 .statusPills .pill {
-  background: #808080;
-  border-color: #808080;
-  margin-right: 5px;
+  background: #fff;
+  border-color: #fff;
+  margin-right: 10px;
+  padding: 6px 0px;
 }
 
 .statusPills .pill em {
-  color: #bdbdbd;
+  color: #fff;
+  background: #555;
+  padding: 6px;
 }
 
 #chartContainer {
   left: 0;
   right: 0;
   bottom: 0;
-  height: auto;
+  height: 60%;
   font-size: 20px;
-  background: #111;
+  background: #f5f6f1;
   display: block;
-  position: absolute;
+  position: relative;
   margin: 2px;
   overflow: hidden;
+  z-index:0;
 }
 
 #chartContainer svg {
@@ -336,7 +377,7 @@ a, a:visited, a:link {
 
 .bgButton {
   margin: 10px;
-  border: 2px solid #000;
+  border: none;
   border-radius: 5px;
   display: inline-block;
   width: 360px;
@@ -369,17 +410,15 @@ a, a:visited, a:link {
 }
 
 .alarming .bgButton {
-  border-color: #bdbdbd;
-  color: #000;
-  box-shadow: 2px 2px 0 #ddd;
+  color: #E3E2D6;
 }
 
 .alarming.urgent .bgButton {
-  background-color: red;
+  /*background-color: red;*/
 }
 
 .alarming.warning .bgButton {
-  background-color: yellow;
+  /*background-color: yellow;*/
 }
 
 .alarming .bgButton:active {
@@ -426,7 +465,7 @@ a, a:visited, a:link {
   margin: 4px;
   padding: 0;
   color: #808080;
-  width: 40%;
+  width: 35%;
   text-align: center;
 }
 
@@ -435,13 +474,13 @@ a, a:visited, a:link {
   font-size: 18px;
   white-space: nowrap;
   border-radius: 5px;
-  border: 2px solid #000;
+  border: 2px solid #E3E2D6;
   cursor: pointer;
 }
 
 .focus-range .selected {
   border-color: #808080;
-  color: #000;
+  color: #E3E2D6;
   background: #808080;
 }
 
@@ -488,6 +527,7 @@ a, a:visited, a:link {
   .bgStatus .currentBG {
     font-size: 80px;
     line-height: 80px;
+    color: #fff!important;
   }
 
   .bgStatus .currentBG.bg-limit, .bgStatus .currentBG.icon-hourglass {
@@ -502,6 +542,7 @@ a, a:visited, a:link {
   .bgStatus .majorPills {
     font-size: 20px;
     line-height: 24px;
+    display: none!important;
   }
 
   .bgStatus .minorPills {
@@ -537,7 +578,7 @@ a, a:visited, a:link {
   }
 }
 
-@media (max-width: 750px) {
+@media (max-width: 768px) {
   .x.axis {
     font-size: 2.5vmin !important;
   }
@@ -577,6 +618,7 @@ a, a:visited, a:link {
   .bgStatus .majorPills {
     font-size: 15px;
     line-height: 17px;
+    display: none!important;
   }
 
   .bgStatus .minorPills {
@@ -588,19 +630,38 @@ a, a:visited, a:link {
     font-size: 50px;
     width: 250px;
   }
-}
-
-@media (max-width: 400px) {
+  .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 14% 0;
+  }
   .primary {
     text-align: center;
+    flex-direction: column;
+    display: flex;
     margin-bottom: 0;
+    height: 40%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .currentTime{
+    color: #fff!important;
+    margin: 15px 0;
+  }
+
+  .pill.delta{
+    display: none;
   }
 
   .bgStatus {
     float: none;
     padding: 0;
     text-align: center;
-    width: 250px;
+    width: 100%;
+    margin-left: 0%;
   }
 
 
@@ -622,11 +683,14 @@ a, a:visited, a:link {
   .bgStatus .pill.direction {
     font-size: 60px;
     line-height: 60px;
+    width: 5px;
+    overflow: visible;
   }
 
   .bgStatus .majorPills {
     font-size: 15px;
     line-height: 17px;
+    display: none!important;
   }
 
   .bgStatus .minorPills {
@@ -655,12 +719,12 @@ a, a:visited, a:link {
   }
 
   #currentTime {
-    display: inline;
-    vertical-align: middle;
+    display: block;
   }
 
   .statusPills {
-    display: inline;
+    display: block;
+    margin-top: 10px;
     margin-left: auto;
     font-size: 12px;
     line-height: 13px;
@@ -686,6 +750,7 @@ a, a:visited, a:link {
   }
   .y.axis {
     font-size: 2.5vmin !important;
+
   }
 
 }
@@ -697,7 +762,7 @@ a, a:visited, a:link {
 }
 
 @media (max-height: 480px) {
-  #container #toolbar {
+  #toolbar {
     float: right;
     height: auto;
     background: none;
@@ -748,6 +813,7 @@ a, a:visited, a:link {
   }
 
   .bgStatus .majorPills {
+    display: none!important;
     font-size: 15px;
     line-height: 17px;
   }
@@ -794,6 +860,7 @@ a, a:visited, a:link {
   .bgStatus .majorPills {
     font-size: 15px;
     line-height: 17px;
+    display: none!important;
   }
 
   .bgStatus .minorPills {
@@ -824,4 +891,97 @@ a, a:visited, a:link {
     font-size: 12px;
     line-height: 13px;
   }
+}
+
+
+/******
+// Inclusões - Carol X */
+.dbsize, .focus-range{
+  display: none!important;
+}
+.axis .tick text{
+  fill: #9A9B8C;
+}
+.axis .tick line, .axis .domain{
+  stroke: #9A9B8C;
+}
+
+.forecast-dot{
+  display: none;
+}
+
+.chart-context{
+  display: none!important;
+}
+
+.currentTime{
+  color: #fff!important;
+}
+
+#readings{
+  background: #f5f6f1;
+  margin-top: 10px;
+  z-index:1000;
+  width: 100%;
+  padding: 0;
+}
+
+#readings-list{
+  list-style-type: none;
+  margin: 20px 0 60px 0;
+  padding: 0;
+  background: #333;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+#readings-list li{
+  padding: 20px 20px;
+  font-size: 21px;
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1px 0 0 0;
+  width: 100%;
+  max-height: 66px;
+  box-sizing: border-box;
+}
+
+#readings-list li .bg-value{
+  width: 20%;
+  height: 100%;
+  max-width: 60px;
+  min-width: 50px;
+  text-align: left;
+  text-align: right;
+  font-size: 24px;
+}
+#readings-list li .bg-time{
+  width: 60%;
+  height: 100%;
+  font-size: 16px;
+  text-align: right;
+  vertical-align: middle;
+}
+
+.y.axis .domain{
+  fill: #f5f6f1;
+}
+
+.tooltip span{
+  display: block;
+  padding: 5px 0;
+}
+.tooltip{
+  display: block;
+  padding: 8px!important;
+}
+
+#loadingMessageText{
+  display: none!important;
 }

@@ -165,7 +165,7 @@ input[type=number]:invalid {
   margin: 10px;
 }
 #about a {
-  color: #fff;
+  color: #333;
   text-decoration: underline;
 }
 
@@ -304,24 +304,24 @@ h1, legend,
 }
 #notification.info a {
   background: #00f;
-  color: #fff;
+  color: #333;
 }
 #notification.warn a {
   background: #cc0;
-  color: #000;
+  color: #E3E2D6;
 }
 #notification.success a {
   background: #090;
-  color: #fff;
+  color: #333;
 }
 #notification.urgent a {
   background: #c00;
-  color: #fff;
+  color: #333;
 }
 #notification a {
   background: #c00;
   border-radius: 5px;
-  color: #fff;
+  color: #333;
   display: block;
   height: 20px;
   padding: 0.5em;
@@ -337,7 +337,7 @@ h1, legend,
 }
 
 .experiments a {
-  color: #fff;
+  color: #333;
   font-size: 1.5em;
 }
 

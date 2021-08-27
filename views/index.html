@@ -2,12 +2,13 @@
 <html>
 
 <head>
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0">
   <meta name="apple-mobile-web-app-capable" content="yes">
-  <link rel="apple-touch-startup-image" href="images/launch.png">
-  <meta name="apple-mobile-web-app-title" content="Nightscout">
+  <link rel="apple-touch-startup-image" href="images/icon_aurora_transparent.png">
+  <meta name="apple-mobile-web-app-title" content="Aurora">
 
-  <title>Nightscout</title>
+  <title>Aurora</title>
 
   <link rel="apple-touch-icon" sizes="57x57" href="images/apple-touch-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="images/apple-touch-icon-60x60.png">
@@ -24,10 +25,10 @@
   <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16">
   <link rel="manifest" href="manifest.json">
   <link rel="shortcut icon" href="images/favicon.ico">
-  <meta name="msapplication-TileColor" content="#00a300">
+  <meta name="msapplication-TileColor" content="#Aurora">
   <meta name="msapplication-TileImage" content="/images/mstile-144x144.png">
   <meta name="msapplication-config" content="/browserconfig.xml">
-  <meta name="theme-color" content="#333333">
+  <meta name="theme-color" content="#2FB3BE">
   <link rel="preload" href="css/ui-darkness/jquery-ui.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <link rel="preload" href="css/jquery.tooltips.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <link rel="preload" href="css/main.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
@@ -45,7 +46,7 @@
       width: 100%;
       margin: 0;
       padding: 0;
-      background: #000000;
+      background: #2FB3BE;
       z-index: 1000;
     }
 
@@ -58,6 +59,10 @@
       left: 0;
       font-size: 16px;
     }
+    #loadingMessage img{
+      width: 50%;
+      max-width: 280px;
+    }
 
     .spinner {
       margin: 100px auto 0;
@@ -68,7 +73,7 @@
     .spinner>div {
       width: 18px;
       height: 18px;
-      background-color: #333;
+      background-color: #fff;
 
       border-radius: 100%;
       display: inline-block;
@@ -106,10 +111,11 @@
 </head>
 
 <body>
+  <!-- <%- include('partials/toolbar') %> -->
   <div id="centerMessagePanel">
     <div id="loadingMessage">
       <p><img src="images/launch.png"></p>
-      <p id="loadingMessageText">Loading the client</p>
+      <p id="loadingMessageText">Carregando</p>
       <div class="spinner">
         <div class="bounce1"></div>
         <div class="bounce2"></div>
@@ -118,7 +124,7 @@
     </div>
   </div>
   <div class="container loading" id="container">
-    <%- include('partials/toolbar') %>
+    
 
     <div id="notification" role="region" aria-label="Notification">
       <a href="#" aria-label="cancel"><span></span><i class="icon-cancel-circled"></i></a>
@@ -146,7 +152,7 @@
       </div>
       <div></div>
 
-      <ul class="focus-range">
+      <ul class="focus-range" style="display: none">
         <li data-hours="1" class="translate">Hours:</li>
         <li data-hours="2">2</li>
         <li data-hours="3">3</li>
@@ -161,6 +167,11 @@
   </div>
   <div class="row-fluid section1">
     <div id="chartContainer" role="region" aria-label="Chart"></div>
+  </div>
+
+  <div id="readings">
+    <ul id="readings-list">
+    </ul>
   </div>
   </div>
 
@@ -748,8 +759,8 @@
   </div>
 
   <div class="audio alarms">
-    <audio src="audio/alarm.mp3" preload="auto" loop="true" class="alarm mp3" type="audio/mp3"></audio>
-    <audio src="audio/alarm2.mp3" preload="auto" loop="true" class="urgent alarm2 mp3" type="audio/mp3"></audio>
+    <audio src="audio/ding.mp3" preload="auto" loop="false" class="alarm mp3" type="audio/mp3" volume="1"></audio>
+    <audio src="audio/nudge.mp3" preload="auto" loop="false" class="urgent alarm2 mp3" type="audio/mp3" volume="2"></audio>
   </div>
 
   <script src="<%= locals.bundle %>/js/bundle.app.js"></script>
