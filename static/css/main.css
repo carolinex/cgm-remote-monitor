@@ -410,9 +410,7 @@ a, a:visited, a:link {
 }
 
 .alarming .bgButton {
-  border-color: #bdbdbd;
   color: #E3E2D6;
-  box-shadow: 2px 2px 0 #ddd;
 }
 
 .alarming.urgent .bgButton {
